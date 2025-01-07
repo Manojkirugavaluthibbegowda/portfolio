@@ -77,6 +77,37 @@ header {
     background: #fff;
     transition: all 0.3s ease;
   }
+
+  header ul.mobile {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 10px 0;
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  header ul.mobile li {
+    text-align: center;
+  }
+  
+  header ul.mobile li a {
+    padding: 10px 15px;
+  }
+  
+  header ul.mobile li a:hover {
+    background: #fff;
+    color: #2575fc;
+    transform: scale(1.05);
+  }
+  
+  .show-menu ul.mobile {
+    display: flex;
+  }
   
   /* Responsive Design */
   @media screen and (max-width: 768px) {
