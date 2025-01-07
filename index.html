@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manoj's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">My Portfolio</div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="desktop">
+        <li>
+          <a href="#home"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li>
+          <a href="#about"><i class="fas fa-user"></i> About</a>
+        </li>
+        <li>
+          <a href="#skills"><i class="fas fa-cogs"></i> Skills</a>
+        </li>
+        <li>
+          <a href="#projects"
+            ><i class="fas fa-project-diagram"></i> Projects</a
+          >
+        </li>
+        <li>
+          <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
+        </li>
+        <li>
+          <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+        </li>
+      </ul>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+      <div class="home-content">
+        <h1>Hello, I'm <span>MANOJ K T</span></h1>
+        <p>
+          A passionate Software Engineer with expertise in Java, Spring Boot,
+          and IoT. Let’s build something great together!
+        </p>
+        <a href="#about" class="btn">Learn More</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <img
+          src="images/profile.jpg"
+          alt="Profile Picture"
+          class="profile-pic"
+        />
+        <div class="bio">
+          <h3>Hi, I'm Manoj!</h3>
+          <p>
+            I’m a Software Engineer with experience in Java backend development,
+            Spring Boot, Hibernate, MySQL, and API development. I hold an MSc in
+            Electronic & Computer Technology (IoT) from Dublin City University
+            and a BE in Electronics and Communication Engineering.I am
+            passionate about learning new technologies and building impactful
+            projects.
+          </p>
+          <a href="files/Manoj_Resume.pdf" download class="resume-btn"
+            >Download My Resume</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">Java</div>
+        <div class="skill">Spring Boot</div>
+        <div class="skill">Hibernate</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">Spring Data JPA</div>
+        <div class="skill">REST API</div>
+        <div class="skill">Microservice</div>
+        <div class="skill">GIT</div>
+        <div class="skill">Python & Flask</div>
+        <div class="skill">HTML, CSS, JavaScript</div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project">
+          <a
+            href="https://github.com/Manojkirugavaluthibbegowda/ecommerce.backend.git"
+            target="_blank"
+          >
+            <img src="images/e-commerce-backend.jpg" alt="E-Commerce Backend" />
+            <h3>E-Commerce Backend Application</h3>
+          </a>
+          <p>
+            Developed a scalable backend system for an e-commerce platform using
+            Java, Spring Boot, and SQL Server.
+          </p>
+        </div>
+        <div class="project">
+          <a
+            href="https://github.com/Manojkirugavaluthibbegowda/EE5003repo.git"
+            target="_blank"
+          >
+            <img src="images/energy-dashboard.jpg" alt="Energy Dashboard" />
+            <h3>Energy Usage Dashboard</h3>
+          </a>
+          <p>
+            Developed a real-time energy monitoring system using Flask and
+            Python.
+          </p>
+        </div>
+        <div class="project">
+          <a
+            href="https://github.com/Manojkirugavaluthibbegowda/manfitness"
+            target="_blank"
+          >
+            <img src="images/manfitness.jpg" alt="ManFitness" />
+            <h3>ManFitness Static Web APP</h3>
+          </a>
+          <p>
+            Developed a static web application based on my imaginary fitness
+            journey.
+          </p>
+        </div>
+        <div class="project">
+          <a
+            href="https://drive.google.com/drive/folders/1-3hWEB4zehkH2gm3HlJTFLOAWwh_qy5B"
+            target="_blank"
+          >
+            <img src="images/robotic-guide.jpg" alt="Robotic Guide" />
+            <h3>Pedestrain Robotic Guide using Raspberry PI</h3>
+          </a>
+          <p>
+            Built a robotic guide system using Raspberry Pi 3b+ for assisting
+            pedestrians.
+          </p>
+        </div>
+        <div class="project">
+          <a
+            href="https://drive.google.com/file/d/1gzZN24OsX5ap9XTjpRoj6JUH1OCBysO3/view?usp=drivesdk"
+            target="_blank"
+          >
+            <img
+              src="images/multifunctional-robot.jpg"
+              alt="Multi-Functional-Robot"
+            />
+            <h3>Multi-Functional Robot</h3>
+          </a>
+          <p>Built a multifunctional robot using Arduino UNO.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="experience-container">
+        <!-- Experience 1 -->
+        <div class="experience-card">
+          <h3>Software Engineer</h3>
+          <h4>OSS Technologies Pvt Ltd, Bengaluru, India</h4>
+          <p class="duration">May 2021 - Aug 2023</p>
+          <ul>
+            <li>
+              Developed Java backend services using Spring Boot and Hibernate.
+            </li>
+            <li>
+              Created RESTful APIs for seamless integration with frontend
+              applications.
+            </li>
+            <li>
+              Designed and optimized MySQL databases to handle complex queries
+              efficiently.
+            </li>
+            <li>
+              Collaborated with cross-functional teams to ensure project
+              deliverables were met.
+            </li>
+            <li>
+              Led troubleshooting and bug-fixing efforts to improve system
+              stability.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="experience-card">
+          <h3>Independent Project Developer</h3>
+          <h4>Dublin City University, Dublin, Ireland</h4>
+          <p class="duration">July 2024 - Aug 2024</p>
+          <ul>
+            <li>
+              Developed a real-time energy monitoring dashboard for smart homes
+              using Flask and Python.
+            </li>
+            <li>
+              Implemented dynamic visualizations and RESTful API integration.
+            </li>
+            <li>
+              Gained hands-on experience with IoT protocols and frameworks.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-content">
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:manojktireland@gmail.com">manojktireland@gmail.com</a>
+        </p>
+        <p>
+          <strong>LinkedIn:</strong>
+          <a
+            href="https://www.linkedin.com/in/manoj-kirugavalu-thibbegowda-22a41a244/"
+            >Manoj Kirugavalu Thibbegowda</a
+          >
+        </p>
+        <p>
+          <strong>GitHub:</strong>
+          <a href="https://github.com/Manojkirugavaluthibbegowda"
+            >Manojkirugavaluthibbegowda</a
+          >
+        </p>
+        <p><strong>Phone:</strong> +353–894688006</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Manoj K.T All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

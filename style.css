@@ -1,0 +1,341 @@
+/* General Reset */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #6a11cb, #5d036d);
+    color: #fff;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  header .logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  header ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  header ul li {
+    position: relative;
+  }
+  
+  header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  header ul li a:hover {
+    background: #fff;
+    color: #2575fc;
+    transform: scale(1.05);
+  }
+  
+  /* Mobile Menu */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+  }
+  
+  .menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    header ul.desktop {
+      display: none;
+    }
+  
+    header .menu-toggle {
+      display: flex;
+    }
+  }
+
+/* Home Section */
+#home {
+    position: relative;
+    height: 100vh;
+    background: url('images/background1.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.home-content {
+    z-index: 1;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.home-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.home-content h1 span {
+    color: #fff;
+}
+
+.home-content p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.btn {
+    padding: 15px 30px;
+    background-color: #6a11cb;
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #6a11cb;
+}
+
+/* About Section */
+#about {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;  /* Ensures that the content wraps nicely on smaller screens */
+}
+
+.profile-pic {
+    width: 150px;  /* Adjust the size as needed */
+    height: 150px; /* Keep it square */
+    border-radius: 50%; /* Make the image round */
+    object-fit: cover;  /* Crop the image to fit the circle */
+    border: 4px solid #6a11cb; /* Optional: add a border for emphasis */
+}
+
+.bio {
+    max-width: 600px;
+    text-align: left;
+}
+
+.bio h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.bio p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.resume-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #6a11cb; /* Button color */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.resume-btn:hover {
+    background-color: #5d036d; /* Darker shade on hover */
+}
+
+
+#skills, #projects{
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#skills .skills-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-top: 20px;
+}
+
+.skill {
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+#experience {
+    background-color: #ffffff;
+    padding: 50px;
+    text-align: center;
+}
+
+#experience h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.experience-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    text-align: left;
+}
+
+.experience-card h3 {
+    font-size: 24px;
+    color: #6a11cb;
+    margin-bottom: 5px;
+}
+
+.experience-card h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.duration {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.experience-card ul {
+    list-style: disc inside;
+    padding-left: 20px;
+}
+
+.experience-card ul li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.experience-card ul li:last-child {
+    margin-bottom: 0;
+}
+
+#projects, #contact {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#projects .projects-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 20px;
+}
+
+.project img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.project h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: #6a11cb;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #5d036d;
+}
+
+/* Footer */
+footer {
+    background: #6a11cb;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
