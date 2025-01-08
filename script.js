@@ -8,9 +8,14 @@ document.querySelectorAll('nav ul li a').forEach(link => {
 });
 
 function toggleMenu() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.querySelector('header ul.mobile');
     const header = document.querySelector('header');
     header.classList.toggle('show-menu');
-  }
+
+    menuToggle.classList.toggle('active');
+    mobileMenu.classList.toggle('show-menu');
+}
 
   // Reveal experience cards on scroll
 function revealExperienceCards() {
@@ -26,3 +31,4 @@ function revealExperienceCards() {
 }
 
 window.addEventListener('scroll', revealExperienceCards);
+
