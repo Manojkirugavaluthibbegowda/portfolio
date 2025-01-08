@@ -65,6 +65,7 @@ header {
   header ul li a:hover {
     background: #fff;
     color: #2575fc;
+    border: 2px solid #2575fc;
     transform: scale(1.1);
   }
   
